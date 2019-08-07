@@ -6,39 +6,41 @@ import numpy as np
 import sqlite3
 import matplotlib.pyplot as plt
 from matplotlib.pylab import *
-from osgeo import osr,gdal
 from mpl_toolkits.basemap import Basemap
+from osgeo import osr,gdal
 from matplotlib.pylab import *
 from pyresample import kd_tree,geometry
 from pyresample import load_area, save_quicklook, SwathDefinition
 from netCDF4 import Dataset
 
-filename='/Users/mariapinavomero/Documents/nh_drift/2018/0318/data/20180301.nc'
+filename='./data/nc/ice_drift_nh_polstere-625_multi-oi_201902271200-201903011200.nc'
 
 def plotBasemap(lons,lats,variable):
- 
+  poplist = [i for i in range(100)]
+  print("plotBasemap")
   # compute mean longitude,latitude
   # for center of Basemap plot
   lat0 = lons.mean()
   lon0 = lats.mean()
   #lon0 = <span class="skimlinks-unlinked">lons.mean</span>()
   #lat0 = <span class="skimlinks-unlinked">lats.mean</span>()
- 
+  print(poplist.pop())
   # create basemap object in
   # polar-stereographic projection
   m = Basemap(projection='npstere',
   boundinglat=60.0,lon_0=300.0,resolution='h',area_thresh=50000)
   #lon_0=315.,boundinglat=69,\ lat_ts=70, resolution='l',rsphere=(6378273.,6356889.))
+  print(poplist.pop())
   m.drawcoastlines(linewidth=0.05)
- 
+  print(poplist.pop())
   # add temperature data as scatter-plot on map
   x,y = m(lons,lats)
   m.scatter(x,y,c=variable,cmap=plt.cm.jet,edgecolors=None,s=0.15)
- 
+  print(poplist.pop())
   # add plot title, colorbar
   plt.title('T')
   plt.colorbar()
- 
+  print(poplist.pop())
   # save output to png
   plt.savefig('plottedPolarStereographic.png',dpi=500)
   plt.close()
