@@ -1,0 +1,128 @@
+Driver: GTiff/GeoTIFF
+Files: ice_drift_nh_polstere-625_multi-oi_201902271200-201903011200_dX_tmp.tiff
+Size is 119, 177
+Coordinate System is:
+PROJCS["WGS 84 / NSIDC Sea Ice Polar Stereographic North",
+    GEOGCS["WGS 84",
+        DATUM["WGS_1984",
+            SPHEROID["WGS 84",6378137,298.257223563,
+                AUTHORITY["EPSG","7030"]],
+            AUTHORITY["EPSG","6326"]],
+        PRIMEM["Greenwich",0,
+            AUTHORITY["EPSG","8901"]],
+        UNIT["degree",0.0174532925199433,
+            AUTHORITY["EPSG","9122"]],
+        AUTHORITY["EPSG","4326"]],
+    PROJECTION["Polar_Stereographic"],
+    PARAMETER["latitude_of_origin",70],
+    PARAMETER["central_meridian",-45],
+    PARAMETER["scale_factor",1],
+    PARAMETER["false_easting",0],
+    PARAMETER["false_northing",0],
+    UNIT["metre",1,
+        AUTHORITY["EPSG","9001"]],
+    AXIS["X",EAST],
+    AXIS["Y",NORTH],
+    AUTHORITY["EPSG","3413"]]
+Origin = (-3781.250000000000000,5781.250000000000000)
+Pixel Size = (62.500000000000000,-62.500000000000000)
+Metadata:
+  AREA_OR_POINT=Area
+  dX#ancillary_variables=uncert_dX_and_dY status_flag
+  dX#coordinates=lat lon
+  dX#grid_mapping=Polar_Stereographic_Grid
+  dX#long_name=component of the displacement along the x axis of the grid
+  dX#standard_name=sea_ice_x_displacement
+  dX#units=km
+  dX#_FillValue=-1e+10
+  NC_GLOBAL#abstract=Gridded ice displacement fields obtained from  satellite  image
+processing. It is a low resolution product (62.5km resolution).
+The time span of  the  ice  displacement  is  approximately  48
+hours. This dataset is intended both for  process  studies  and
+data assimilation. Daily products  are  freely  available  from
+the  OSI SAF distribution chain.
+  NC_GLOBAL#activity_type=Space borne instrument
+  NC_GLOBAL#area=Northern Hemisphere
+  NC_GLOBAL#contact=osisaf-manager@met.no
+  NC_GLOBAL#Conventions=CF-1.4
+  NC_GLOBAL#copyright_statement=Copyright 2019 EUMETSAT
+  NC_GLOBAL#distribution_statement=Free
+  NC_GLOBAL#easternmost_longitude=180
+  NC_GLOBAL#gcmd_keywords=Cryosphere > Sea Ice > Sea Ice Motion
+Oceans > Sea Ice > Sea Ice Motion
+Geographic Region > Northern Hemisphere
+Vertical Location > Sea Surface
+EUMETSAT/OSISAF > Satellite Application Facility on Ocean and Sea Ice, European Organisation for the Exploitation of Meteorological Satellites
+  NC_GLOBAL#history=2019-03-02 creation
+  NC_GLOBAL#institution=EUMETSAT OSI SAF
+  NC_GLOBAL#instrument_type=Multi-sensor analysis
+  NC_GLOBAL#keywords=Sea Ice Motion,Sea Ice,Oceanography,Meteorology,Climate,Remote Sensing
+  NC_GLOBAL#netcdf_version=3.6.3
+  NC_GLOBAL#northernmost_latitude=90
+  NC_GLOBAL#PI_name=Thomas Lavergne
+  NC_GLOBAL#platform_name=Multi-sensor analysis
+  NC_GLOBAL#product_id=OSI-405
+  NC_GLOBAL#product_name=osi_saf_lr_ice_drift
+  NC_GLOBAL#product_status=operational
+  NC_GLOBAL#product_version=2.0
+  NC_GLOBAL#project_name=EUMETSAT OSI SAF
+  NC_GLOBAL#references=Product User Manual for OSI-405-c, Lavergne, v1.8, 2016
+Validation Report for OSI-405-c, Lavergne, v5, 2016
+Algorithm Theoretical Basis Document for OSI-405-c, Lavergne, v1.3, 2016
+http://osisaf.met.no
+http://osi-saf.org
+  NC_GLOBAL#software_version=5.1
+  NC_GLOBAL#southernmost_latitude=31.961086
+  NC_GLOBAL#start_date=2019-02-27 12:00:00
+  NC_GLOBAL#stop_date=2019-03-01 12:00:00
+  NC_GLOBAL#title=Daily Low Resolution Sea Ice Displacement from OSI SAF EUMETSAT
+  NC_GLOBAL#topiccategory=Oceans ClimatologyMeteorologyAtmosphere
+  NC_GLOBAL#westernmost_longitude=-180
+  NETCDF_DIM_EXTRA={time}
+  NETCDF_DIM_time_DEF={1,6}
+  NETCDF_DIM_time_VALUES=1298980800
+  Polar_Stereographic_Grid#false_easting=0
+  Polar_Stereographic_Grid#false_northing=0
+  Polar_Stereographic_Grid#grid_mapping_name=polar_stereographic
+  Polar_Stereographic_Grid#latitude_of_projection_origin=90
+  Polar_Stereographic_Grid#proj4_string=+proj=stere +a=6378273 +b=6356889.44891 +lat_0=90 +lat_ts=70 +lon_0=-45
+  Polar_Stereographic_Grid#semi_major_axis=6378273
+  Polar_Stereographic_Grid#semi_minor_axis=6356889.5
+  Polar_Stereographic_Grid#standard_parallel=70
+  Polar_Stereographic_Grid#straight_vertical_longitude_from_pole=-45
+  time#axis=T
+  time#bounds=time_bnds
+  time#calendar=standard
+  time#comment=The time scalar dimension holds the date of _end_ of motion.
+  time#long_name=reference time of product
+  time#standard_name=time
+  time#units=seconds since 1978-01-01 00:00:00
+  xc#axis=X
+  xc#long_name=x coordinate of projection (eastings)
+  xc#standard_name=projection_x_coordinate
+  xc#units=km
+  yc#axis=Y
+  yc#long_name=y coordinate of projection (northings)
+  yc#standard_name=projection_y_coordinate
+  yc#units=km
+Image Structure Metadata:
+  INTERLEAVE=BAND
+Corner Coordinates:
+Upper Left  (   -3781.250,    5781.250) (168d11'12.68"E, 89d56'10.43"N)
+Lower Left  (   -3781.250,   -5281.250) ( 80d36' 6.36"W, 89d56'24.14"N)
+Upper Right (    3656.250,    5781.250) (102d41'21.88"E, 89d56'12.68"N)
+Lower Right (    3656.250,   -5281.250) ( 10d18'17.45"W, 89d56'26.53"N)
+Center      (     -62.500,     250.000) (149d 2'10.48"E, 89d59'51.44"N)
+Band 1 Block=119x17 Type=Float32, ColorInterp=Gray
+  NoData Value=-10000000000
+  Unit Type: km
+  Metadata:
+    ancillary_variables=uncert_dX_and_dY status_flag
+    coordinates=lat lon
+    grid_mapping=Polar_Stereographic_Grid
+    long_name=component of the displacement along the x axis of the grid
+    NETCDF_DIM_time=1298980800
+    NETCDF_VARNAME=dX
+    standard_name=sea_ice_x_displacement
+    units=km
+    _FillValue=-1e+10

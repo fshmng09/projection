@@ -51,22 +51,31 @@ def nc2gtiff(input_name, epsg_in=3413, epsg_out=3857):
     sub_name=["dX","dY"]
     
     for sub in sub_name:
-
+        result = os.system("echo ''")
         #netCDF to geotiff (EPSG code is not changed) 
         out_name = "./data/tiff_raw/{}_{}_tmp.tiff".format(os.path.basename(input_name)[:-3],sub)
         #c is shell command
-        c  = "gdal_translate -a_srs EPSG:{epsg} NETCDF:'{in_name}':{sub} -of \
-        'Gtiff' '{out_name}'".format(epsg=epsg_in,sub=sub, \
+        #options
+            #-a_srs:EPSGcode of input files
+            #-of:output format
+            #
+        print("nc2gtiff")
+        c  = "gdal_translate -a_srs '+proj=stere +a=6378273 +b=6356889.44891 +lat_0=90 +lat_ts=70 +lon_0=-45' NETCDF:'{in_name}':{sub} \
+             -of 'Gtiff' \
+            '{out_name}'".format(epsg=epsg_in,sub=sub, \
                                 in_name=input_name,out_name=out_name) 
         result = os.system(c) #run shell command
         #print(c) #if you want to see the filled c, remove '#' in the head of this line
         if result!=0: # if it raises error, return filename 
             print(input_name, result, "translate")
         
+        result = os.system("echo ''")
+
         #geotiff EPSG_in to EPCG_out
+        print("geotiff2geotiff")
         target_name="./data/tiff_target/{}_{}.tiff".format(os.path.basename(input_name)[:-3],sub)
-        c = "gdalwarp -overwrite  {out_name} \
-            {target_name} -s_srs EPSG:{epsg_in} -t_srs EPSG:{epsg_out} -of \
+        c = "gdalwarp -overwrite  -s_srs '+proj=stere +a=6378273 +b=6356889.44891 +lat_0=90 +lat_ts=70 +lon_0=-45' {out_name}  -r cubic\
+            {target_name}  -t_srs EPSG:{epsg_out} -of \
                 'GTIFF'".format(out_name=out_name, target_name=target_name, 
                             epsg_in=epsg_in, epsg_out=epsg_out)
         result = os.system(c) # run shell command

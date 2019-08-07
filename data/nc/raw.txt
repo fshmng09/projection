@@ -1,0 +1,77 @@
+Driver: netCDF/Network Common Data Format
+Files: ice_drift_nh_polstere-625_multi-oi_201902271200-201903011200.nc
+Size is 512, 512
+Coordinate System is `'
+Metadata:
+  NC_GLOBAL#abstract=Gridded ice displacement fields obtained from  satellite  image
+processing. It is a low resolution product (62.5km resolution).
+The time span of  the  ice  displacement  is  approximately  48
+hours. This dataset is intended both for  process  studies  and
+data assimilation. Daily products  are  freely  available  from
+the  OSI SAF distribution chain.
+  NC_GLOBAL#activity_type=Space borne instrument
+  NC_GLOBAL#area=Northern Hemisphere
+  NC_GLOBAL#contact=osisaf-manager@met.no
+  NC_GLOBAL#Conventions=CF-1.4
+  NC_GLOBAL#copyright_statement=Copyright 2019 EUMETSAT
+  NC_GLOBAL#distribution_statement=Free
+  NC_GLOBAL#easternmost_longitude=180
+  NC_GLOBAL#gcmd_keywords=Cryosphere > Sea Ice > Sea Ice Motion
+Oceans > Sea Ice > Sea Ice Motion
+Geographic Region > Northern Hemisphere
+Vertical Location > Sea Surface
+EUMETSAT/OSISAF > Satellite Application Facility on Ocean and Sea Ice, European Organisation for the Exploitation of Meteorological Satellites
+  NC_GLOBAL#history=2019-03-02 creation
+  NC_GLOBAL#institution=EUMETSAT OSI SAF
+  NC_GLOBAL#instrument_type=Multi-sensor analysis
+  NC_GLOBAL#keywords=Sea Ice Motion,Sea Ice,Oceanography,Meteorology,Climate,Remote Sensing
+  NC_GLOBAL#netcdf_version=3.6.3
+  NC_GLOBAL#northernmost_latitude=90
+  NC_GLOBAL#PI_name=Thomas Lavergne
+  NC_GLOBAL#platform_name=Multi-sensor analysis
+  NC_GLOBAL#product_id=OSI-405
+  NC_GLOBAL#product_name=osi_saf_lr_ice_drift
+  NC_GLOBAL#product_status=operational
+  NC_GLOBAL#product_version=2.0
+  NC_GLOBAL#project_name=EUMETSAT OSI SAF
+  NC_GLOBAL#references=Product User Manual for OSI-405-c, Lavergne, v1.8, 2016
+Validation Report for OSI-405-c, Lavergne, v5, 2016
+Algorithm Theoretical Basis Document for OSI-405-c, Lavergne, v1.3, 2016
+http://osisaf.met.no
+http://osi-saf.org
+  NC_GLOBAL#software_version=5.1
+  NC_GLOBAL#southernmost_latitude=31.961086
+  NC_GLOBAL#start_date=2019-02-27 12:00:00
+  NC_GLOBAL#stop_date=2019-03-01 12:00:00
+  NC_GLOBAL#title=Daily Low Resolution Sea Ice Displacement from OSI SAF EUMETSAT
+  NC_GLOBAL#topiccategory=Oceans ClimatologyMeteorologyAtmosphere
+  NC_GLOBAL#westernmost_longitude=-180
+Subdatasets:
+  SUBDATASET_1_NAME=NETCDF:"ice_drift_nh_polstere-625_multi-oi_201902271200-201903011200.nc":time_bnds
+  SUBDATASET_1_DESC=[1x2] time_bnds (64-bit floating-point)
+  SUBDATASET_2_NAME=NETCDF:"ice_drift_nh_polstere-625_multi-oi_201902271200-201903011200.nc":lat
+  SUBDATASET_2_DESC=[177x119] latitude (32-bit floating-point)
+  SUBDATASET_3_NAME=NETCDF:"ice_drift_nh_polstere-625_multi-oi_201902271200-201903011200.nc":lon
+  SUBDATASET_3_DESC=[177x119] longitude (32-bit floating-point)
+  SUBDATASET_4_NAME=NETCDF:"ice_drift_nh_polstere-625_multi-oi_201902271200-201903011200.nc":dt0
+  SUBDATASET_4_DESC=[1x177x119] dt0 (32-bit integer)
+  SUBDATASET_5_NAME=NETCDF:"ice_drift_nh_polstere-625_multi-oi_201902271200-201903011200.nc":lon1
+  SUBDATASET_5_DESC=[1x177x119] lon1 (32-bit floating-point)
+  SUBDATASET_6_NAME=NETCDF:"ice_drift_nh_polstere-625_multi-oi_201902271200-201903011200.nc":lat1
+  SUBDATASET_6_DESC=[1x177x119] lat1 (32-bit floating-point)
+  SUBDATASET_7_NAME=NETCDF:"ice_drift_nh_polstere-625_multi-oi_201902271200-201903011200.nc":dt1
+  SUBDATASET_7_DESC=[1x177x119] dt1 (32-bit integer)
+  SUBDATASET_8_NAME=NETCDF:"ice_drift_nh_polstere-625_multi-oi_201902271200-201903011200.nc":dX
+  SUBDATASET_8_DESC=[1x177x119] sea_ice_x_displacement (32-bit floating-point)
+  SUBDATASET_9_NAME=NETCDF:"ice_drift_nh_polstere-625_multi-oi_201902271200-201903011200.nc":dY
+  SUBDATASET_9_DESC=[1x177x119] sea_ice_y_displacement (32-bit floating-point)
+  SUBDATASET_10_NAME=NETCDF:"ice_drift_nh_polstere-625_multi-oi_201902271200-201903011200.nc":status_flag
+  SUBDATASET_10_DESC=[1x177x119] sea_ice_x_displacement status_flag (8-bit integer)
+  SUBDATASET_11_NAME=NETCDF:"ice_drift_nh_polstere-625_multi-oi_201902271200-201903011200.nc":uncert_dX_and_dY
+  SUBDATASET_11_DESC=[1x177x119] sea_ice_x_displacement standard_error (32-bit floating-point)
+Corner Coordinates:
+Upper Left  (    0.0,    0.0)
+Lower Left  (    0.0,  512.0)
+Upper Right (  512.0,    0.0)
+Lower Right (  512.0,  512.0)
+Center      (  256.0,  256.0)
