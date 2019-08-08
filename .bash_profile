@@ -9,8 +9,8 @@ fi
 
 #alias エイリアス="実行するファイル"
 
-alias mon2F="rsync -auv --delete nakano@172.16.31.67:/home/nakano/fushiming/ /Users/fushiming/share/monbetsu"
-alias F2mon="rsync -auv --delete /Users/fushiming/share/monbetsu/ nakano@172.16.31.67:/home/nakano/fushiming "
+#alias mon2F="rsync -auv --delete nakano@172.16.31.67:/home/nakano/fushiming/ /Users/fushiming/share/monbetsu"
+#alias F2mon="rsync -auv --delete /Users/fushiming/share/monbetsu/ nakano@172.16.31.67:/home/nakano/fushiming "
 alias jn="jupyter notebook"
 alias jn_lim="jupyter notebook --NotebookApp.iopub_data_rate_limit=1.0e10"
 alias e='emacsclient -nw -a ""'
@@ -19,18 +19,18 @@ alias lmk='latexmk -pvc'
 alias lmkc='latexmk -c'
 alias updatedb='sudo /usr/libexec/locate.updatedb'
 alias download_site="wget -r -l inf -p -k -w 1 "
-alias brew="env PATH=${PATH/\/Users\/fushiming\/\.pyenv\/shims:/} brew"
+#alias brew="env PATH=${PATH/\/Users\/fushiming\/\.pyenv\/shims:/} brew"
 
 #ofp
 alias ofp2local="rsync -auv --delete t00435@ofp.jcahpc.jp:/home/t00435/imac/ /Users/fushiming/ofp/"
 alias loca2ofp="rsync -auv --delete /Users/fushiming/ofp t00345@ofp.jcahpc.jp:/home/t00435/imac/"
 
 #server
-alias sshatom='ssh -Y fushimi@157.82.253.150'
-alias sshclione='ssh -Y fushimi@172.16.31.40'
-alias sshbambi='ssh -Y fushimi@172.16.31.12'
-alias sshocha='ssh -Y fushimi@172.16.31.11'
-alias sshmonbetsu='ssh -Y nakano@172.16.31.67'
+#alias sshatom='ssh -Y fushimi@157.82.253.150'
+#alias sshclione='ssh -Y fushimi@172.16.31.40'
+#alias sshbambi='ssh -Y fushimi@172.16.31.12'
+#alias sshocha='ssh -Y fushimi@172.16.31.11'
+#alias sshmonbetsu='ssh -Y nakano@172.16.31.67'
 
 #python
 alias fushiming="source ~/pymodules/env/bin/activate"
@@ -62,11 +62,11 @@ export PATH=/Library/Frameworks/GDAL.framework/Programs:$PATH
 
 
 # 2018年 4月27日 金曜日 03時31分42秒 UTC - MODIS Reprojection Swath Tool modifications
-MRTSWATH_HOME="/Users/fushiming/Downloads/MRTSwath_download_Mactel/MRTSwath"
-PATH="$PATH:/Users/fushiming/Downloads/MRTSwath_download_Mactel/MRTSwath/bin"
-MRTSWATH_DATA_DIR="/Users/fushiming/Downloads/MRTSwath_download_Mactel/MRTSwath/data"
-export MRTSWATH_HOME PATH MRTSWATH_DATA_DIR
-export PYTHONPATH="~/pymodules:$PYTHONPATH"
+#MRTSWATH_HOME="/Users/fushiming/Downloads/MRTSwath_download_Mactel/MRTSwath"
+#PATH="$PATH:/Users/fushiming/Downloads/MRTSwath_download_Mactel/MRTSwath/bin"
+#MRTSWATH_DATA_DIR="/Users/fushiming/Downloads/MRTSwath_download_Mactel/MRTSwat#h/data"
+#export MRTSWATH_HOME PATH MRTSWATH_DATA_DIR
+#export PYTHONPATH="~/pymodules:$PYTHONPATH"
 
 export ANDROID_HOME=“/usr/local/share/android-sdk”
 export PATH=“${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools”
